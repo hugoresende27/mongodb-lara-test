@@ -4,7 +4,8 @@
     <title>MyBlog</title>
 </head>
 <body>
-<h1>{{$post->title}}</h1>
-<div>{{$post->body}}</div>
+<h1>{{var_dump($post)}}</h1>
+<h1>{{$post->title ?? null}}</h1>
+<h1>{{$post->body ?? null}}</h1>
 </body>
 </html>
